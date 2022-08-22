@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int a[10][10],i,j,r,c,row,sum=0;
+    scanf("%d%d",&r,&c);
+    for(i=1;i<=r;i++)
+    {
+    for(j=0;j<c;j++)
+    scanf("%d",&a[i][j]);
+    }
+    scanf("%d",&row);
+    for(i=row;i<=row;i++)
+    {
+    for(j=0;j<c;j++)
+    sum=sum+a[i][j];
+    }
+    printf("%d",sum);
+    return 0;
+}

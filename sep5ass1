@@ -1,0 +1,24 @@
+#include <stdio.h>
+void display();
+int main()
+{
+    int m,n;
+    printf("enter m and n values\n");
+    scanf("%d%d",&m,&n);
+    display(m,n);
+    return 0;
+}
+void display(int start,int end)
+{
+if(start>end)
+{
+    return;
+}
+else
+{
+   printf("%d\t",start);
+   display(start+1,end);
+}
+}
+
+
